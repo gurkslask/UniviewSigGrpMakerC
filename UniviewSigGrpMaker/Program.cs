@@ -8,15 +8,21 @@ namespace UniviewSigGrpMaker
 	{
 		public static void Main (string[] args)
 		{
-			string[] stringlist = new string[3] ("CR23", "CR2321", "CR1337");
-			foreach (string variabel in stringlist) {
-				Console.WriteLine (variabel);
-			}
-			Console.WriteLine ("Hello World!");
-		}
-		public static void remove_chars_from_string (string[] args)
-		{
 
+			Console.WriteLine ("Hello World!");
+			remove_chars_from_string ();
+		}
+		public static void remove_chars_from_string ()
+		{
+			string[] stringlist = {"CR23", "CR2321", "CR1337"};
+			string iteration_string = "";
+			Regex pattern = new Regex("[A-Z a-z]");
+			foreach (string variabel in stringlist) {
+					pattern.Replace(variabel, "");
+					Console.WriteLine (iteration_string);
+
+				}
 		}
 	}
 }
+
