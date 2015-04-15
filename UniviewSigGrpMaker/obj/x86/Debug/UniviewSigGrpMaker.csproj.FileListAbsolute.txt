@@ -1,0 +1,5 @@
+C:\Users\alexander.svensson\Studio\Projects\Uniview\UniviewSigGrpMaker\bin\Debug\UniviewSigGrpMaker.exe
+C:\Users\alexander.svensson\Studio\Projects\Uniview\UniviewSigGrpMaker\bin\Debug\UniviewSigGrpMaker.pdb
+C:\Users\alexander.svensson\Studio\Projects\Uniview\UniviewSigGrpMaker\obj\x86\Debug\UniviewSigGrpMaker.csprojResolveAssemblyReference.cache
+C:\Users\alexander.svensson\Studio\Projects\Uniview\UniviewSigGrpMaker\obj\x86\Debug\UniviewSigGrpMaker.exe
+C:\Users\alexander.svensson\Studio\Projects\Uniview\UniviewSigGrpMaker\obj\x86\Debug\UniviewSigGrpMaker.pdb

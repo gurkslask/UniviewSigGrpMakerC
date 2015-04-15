@@ -1,6 +1,7 @@
 using System;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading;
 
 namespace UniviewSigGrpMaker
 {
@@ -10,18 +11,16 @@ namespace UniviewSigGrpMaker
 		{
 
 			Console.WriteLine ("Hello World!");
-			remove_chars_from_string ();
+            string[] stringlist = {"CR23", "CR2321", "CR1337"};
+			remove_chars_from_string (stringlist);
+            Thread.Sleep(5000);
 		}
-		public static void remove_chars_from_string ()
+		public static void remove_chars_from_string (string[] args)
 		{
-			string[] stringlist = {"CR23", "CR2321", "CR1337"};
-			string iteration_string = "";
-			Regex pattern = new Regex("[A-Z a-z]");
-			foreach (string variabel in stringlist) {
-					pattern.Replace(variabel, "");
-					Console.WriteLine (iteration_string);
-
-				}
+			foreach (string variabel in args) {
+                    Match iteration_string = Regex.Match(variabel, @"\d+");
+					Console.WriteLine ("Original {0}, efter regex: {1}", variabel, iteration_string);
+                }
 		}
 	}
 }
